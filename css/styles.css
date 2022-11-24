@@ -2,7 +2,7 @@
 
 /* Style for body specifies a background color */
 body {
-    background-color: #999999;
+    background-color: #1D1D1C;
 }
 
 /* Style to create a fluid image */
@@ -21,9 +21,6 @@ img {
 
 /* Style for header specifies top and bottom margins, background color, rounded border, shadow, and alignment */
 header {
-    margin-top: 0.2em;
-    background-color: #FFFFFF;
-    border-radius: 0.5em;
     text-align: center;
 }
 
@@ -33,6 +30,7 @@ nav {
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
+    margin-top: -1.5em;
 }
 
 /* Style specifies padding and margins for unordered list */
@@ -44,7 +42,7 @@ nav ul {
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
 nav li {
-    background-color: #009933;
+    background-color: #9D9D93;
     border-radius: 2em;
     list-style-type: none;
     margin: 0.3em;
@@ -74,10 +72,19 @@ main {
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 2em 0 2em 0;
     background-color: #FFFFFF;
-    border-top: solid 0.2em #009933;
-    border-bottom: solid 0.2em #009933;
+    opacity: 0.85;
+}
+
+/* Style for anchor elements within the main element*/
+main a {
+    background-color: #9D9D93;
+    border-radius: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.5em;
+    text-decoration: none;
 }
 
 /* Style for footer specifies font size, text alignment, and top margin */
@@ -85,6 +92,13 @@ footer {
     font-size: .70em;
     text-align: center;
     margin-top: 2em;
+    color: #FFFFFF;
+}
+
+/* Style for anchor elements within the footer element */
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Style hides the tablet class */
@@ -97,9 +111,9 @@ footer {
     display: none;
 }
 
-/* Media query for tablet viewport targets screen size with a minimum width of 481px. */
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 660px) {
 
     /* Style specifies a horizontal display for navigation links */
     nav li {
@@ -110,12 +124,16 @@ footer {
         padding-left: 0;
         padding-right: 0;
         width: 14%;
+        white-space: nowrap;
+        border-radius: 0;
+        background-color: transparent;
     }
 
     /* Style specifies clear and top margin properties for the main element */
     main {
         clear: left;
-        margin-top: 4em;
+        margin-top: -0.3em;
+        border-radius: 0;
     }
 
     /* Style specifies to hide the mobile class */
@@ -152,4 +170,104 @@ footer {
         font-weight: bold;
         margin-top: 0.7em;
     }
+
+    /* Style for h1 element */
+    h1 {
+        text-align: center;
+    }
+
+    /* Style for images within the figure element */
+    figure img {
+        background-color: #1D1D1C;
+        display: inline;
+        height: 8em;
+        width: 28%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    /* Style for anchor elements within the figure element */
+    figure a {
+        background-color: transparent; 
+        padding: 0;
+        text-decoration: none;
+    }
+    
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px. */
+
+@media only screen and (min-width: 830px) {
+
+    /* Style specifies a width for container */
+    #container {
+        width: 80%;
+    }
+
+    /* Style specifies margin and padding for the unordered list within the nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.50%;
+        padding-right: 0.50%;
+    }
+
+    /* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+    nav li {
+        border-radius: 0;
+        border-top: solid #000000;
+        border-bottom: solid #000000;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 16.6666%;
+    }
+
+    /* Style for navigation links specifies display and padding */
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+    }
+
+    /* Style rules for pseudo-classes */
+    nav li a:link {
+        color: #FFFFFF;
+    }
+
+    nav li a:visited {
+        color: #FFFF99;
+    }
+
+    nav li a:hover {
+        color: #FFFF00;
+        font-style: italic;
+    }
+
+    /* Style specifies border, shadow, margin, and padding for main element */
+    main {
+        border-style: none;
+        box-shadow: 0.5em 0.5em 0.5em #404040;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    /* Style specifies left and right padding for paragraph elements within the main element */
+    main p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    /* Style specifies a bottom margin for the items class */
+    .items {
+        margin-bottom: 6em;
+    }
+
+    /* Style specifies a gradient for the body element */
+    body {
+        background: -moz-linear-gradient(#FFFFFF, #FFFF99); /* Firefox */
+        background: -o-linear-gradient(#FFFFFF, #FFFF99); /* Opera */
+        background: -webkit-linear-gradient(#FFFFFF, #FFFF99); /* Chrome, Safari */
+        background: linear-gradient(#FFFFFF, #FFFF99);
+        background-attachment: fixed;
+    }
+    
 }
