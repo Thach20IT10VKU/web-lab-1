@@ -150,6 +150,23 @@ video {
     max-width: 100%;
 }
 
+/* Style rule for the copyright div */
+#copyright {
+    float: left;
+    margin-top: 2em;
+    width: 80%;
+}
+/* Style rule for social div */
+#social {
+    float: right;
+    width: 20%;
+}
+
+/* Style rule for social media icons */
+#social img {
+    padding: 0.5em;
+}
+
 /* Media query for tablet viewport targets screen size with a minimum width of 660px. */
 
 @media only screen and (min-width: 660px) {
