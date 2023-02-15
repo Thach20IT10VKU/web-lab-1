@@ -357,6 +357,11 @@ video {
     .btn {
         margin-left: 12em;
     }
+
+    /* Style rule for form unordered list element */
+    form ul {
+        margin-left: 2em;
+    }
     
 }
 
